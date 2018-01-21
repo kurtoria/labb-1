@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewControllerAboutVictoria : UIViewController
+@property (nonatomic) float redBackgroundValueAV;
+@property (nonatomic) float greenBackgroundValueAV;
+@property (nonatomic) float blueBackgroundValueAV;
+@property (nonatomic) float redTextValueAV;
+@property (nonatomic) float greenTextValueAv;
+@property (nonatomic) float blueTextValueAV;
 
 @end

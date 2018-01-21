@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewControllerAboutFamily : UIViewController
-
+@property (nonatomic) float redBackgroundValueAF;
+@property (nonatomic) float greenBackgroundValueAF;
+@property (nonatomic) float blueBackgroundValueAF;
+@property (nonatomic) float redTextValueAF;
+@property (nonatomic) float greenTextValueAF;
+@property (nonatomic) float blueTextValueAF;
 @end

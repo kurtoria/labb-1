@@ -7,6 +7,10 @@
 //
 
 #import "ViewControllerMiniGame.h"
+#import "ViewControllerSettings.h"
+
+UIViewController *backgroundSavedColorGame;
+UIViewController *textSavedColorGame;
 
 @interface ViewControllerMiniGame ()
 @property (weak, nonatomic) IBOutlet UISlider *numberSlider;
@@ -14,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *textShown;
 @property (weak, nonatomic) IBOutlet UILabel *guessesShown;
 @property (weak, nonatomic) IBOutlet UIButton *correctButton;
+
 
 @end
 
@@ -34,6 +39,12 @@ int guessButtonPressed;
     NSLog(@"viewDidLoad: secretNr is %i", secretNr);
     //self.numberSlider.value = 50;
     //self.numberShown.text = @"50";
+    //ViewControllerSettings *colorSettings = [[ViewControllerSettings alloc] init];
+    [super viewDidLoad];
+    //[colorSettings setBackgroundColor];
+    //[colorSettings setTextColor];
+    [ViewControllerSettings sendBackgroundColor: self.redBackgroundValueMG andGreen:self.greenBackgroundValueMG andBlue:self.blueBackgroundValueMG
+                                  andBackground:self.view];
 }
 
 //If guessing correct
@@ -115,14 +126,20 @@ int guessButtonPressed;
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    ViewControllerSettings *colorSetting = [[ViewControllerSettings alloc] init];
+    backgroundSavedColorGame = [segue destinationViewController];
+    backgroundSavedColorGame.view.backgroundColor = [colorSetting currentColor];
+    textSavedColorGame = [segue destinationViewController];
+    textSavedColorGame.view.tintColor = [colorSetting currentTextColor];
 }
-*/
+
 
 @end

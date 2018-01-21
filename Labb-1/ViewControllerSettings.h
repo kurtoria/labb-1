@@ -26,5 +26,6 @@
 @property (nonatomic) float redTextValueS;
 @property (nonatomic) float greenTextValueS;
 @property (nonatomic) float blueTextValueS;
+@property (nonatomic) BOOL settingsChangedColor;
 
 @end

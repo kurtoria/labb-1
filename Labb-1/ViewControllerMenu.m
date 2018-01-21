@@ -54,6 +54,12 @@ static BOOL changedColor/*= NO*/;
 }
  
 
+/*
++(BOOL) isSavedColor {
+    if ([])
+        return YES;
+} else
+*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -90,8 +96,10 @@ static BOOL changedColor/*= NO*/;
         valuesViewControllerSettings.redBackgroundValueS = _redBackgroundValueM;
         valuesViewControllerSettings.greenBackgroundValueS = _greenBackgroundValueM;
         valuesViewControllerSettings.blueBackgroundValueS = _blueBackgroundValueM;
+        valuesViewControllerSettings.settingsChangedColor = changedColor;
+    
         
-        NSLog(@"isChangedValue: %d", changedColor);
+        NSLog(@"Segue menu: isChangedValue: %d", changedColor);
         
     } else if ([[segue identifier] isEqualToString:@"aboutFamily"]) {
         ViewControllerAboutFamily *valuesViewControllerAboutFamily = [segue destinationViewController];

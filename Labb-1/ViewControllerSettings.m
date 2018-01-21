@@ -34,7 +34,7 @@ UIViewController *textSavedColor;
 @property (weak, nonatomic) IBOutlet UILabel *greenTextLabel;
 @property (weak, nonatomic) IBOutlet UILabel *blueTextLabel;
 
-@property (nonatomic) ViewControllerMenu *delegateReference;
+//@property (nonatomic) ViewControllerMenu *delegateReference;
 //@property (nonatomic) UIViewController *backgroundSavedColor;
 //@property (nonatomic) UIViewController *textSavedColor;
 /*
@@ -57,17 +57,18 @@ NSSet *allLabelText;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self refresh];
+    
     [self setBorder];
     
-    //NSLog(@"isChangedValue: %d", changedColor);
-    /*
-    if ([ViewControllerMenu isChangedColor]) {
-    [ViewControllerSettings sendBackgroundColor:self.redBackgroundValueS andGreen:self.greenBackgroundValueS andBlue:self.blueBackgroundValueS andBackground:self.view];
+    NSLog(@"viewdidload settings: isChangedValue: %d", changedColor);
+    
+    if (/*[ViewControllerMenu isChangedColor]*/self.settingsChangedColor) {
+            [ViewControllerSettings sendBackgroundColor:self.redBackgroundValueS andGreen:self.greenBackgroundValueS andBlue:self.blueBackgroundValueS andBackground:self.view];
     } else {
         [self refresh];
     }
-     */
+    
+    
     
 }
 
@@ -226,8 +227,11 @@ NSSet *allLabelText;
         valuesViewControllerMenu.greenTextValueM = self.textGreenAmount.value;
         valuesViewControllerMenu.blueTextValueM = self.textBlueAmount.value;
         */
+        //changedColor = YES;
         
         [ViewControllerMenu isChangedColor];
+        //changedColor == YES;
+            NSLog(@"segue settings: isChangedValue: %d", changedColor);
 
         
     }

@@ -10,7 +10,6 @@
 
 @interface ViewControllerMenu : UIViewController
 +(BOOL)isChangedColor;
-//+(BOOL) isSavedColor;
 @property (nonatomic) float redBackgroundValueM;
 @property (nonatomic) float greenBackgroundValueM;
 @property (nonatomic) float blueBackgroundValueM;

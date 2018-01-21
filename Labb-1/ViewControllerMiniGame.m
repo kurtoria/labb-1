@@ -9,8 +9,8 @@
 #import "ViewControllerMiniGame.h"
 #import "ViewControllerSettings.h"
 
-UIViewController *backgroundSavedColorGame;
-UIViewController *textSavedColorGame;
+//UIViewController *backgroundSavedColorGame;
+//UIViewController *textSavedColorGame;
 
 @interface ViewControllerMiniGame ()
 @property (weak, nonatomic) IBOutlet UISlider *numberSlider;
@@ -30,41 +30,27 @@ int guessButtonPressed;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self refreshNumber];
-    //[self randomNumber:secretNr];
-    //[self randomNumber];
-    //[self changeText:@"Gissa numret"];
-    //self.numberSlider.value = 50;
     [self initialize];
     NSLog(@"viewDidLoad: secretNr is %i", secretNr);
-    //self.numberSlider.value = 50;
-    //self.numberShown.text = @"50";
-    //ViewControllerSettings *colorSettings = [[ViewControllerSettings alloc] init];
     [super viewDidLoad];
-    //[colorSettings setBackgroundColor];
-    //[colorSettings setTextColor];
     [ViewControllerSettings sendBackgroundColor: self.redBackgroundValueMG andGreen:self.greenBackgroundValueMG andBlue:self.blueBackgroundValueMG
                                   andBackground:self.view];
 }
 
-//If guessing correct
+//Initializes the game, with generating random nr, refresh slider, refresh number of guesses and changing the text
 -(void)initialize {
     self.numberSlider.value = 50;
-    [self randomNumber];
-    //[self currentNumber];
-    [self refreshNumber];
     guessButtonPressed = 0;
+    [self randomNumber];
+    [self refreshNumber];
     [self refreshNoOfGuesses];
     [self changeText:@"Gissa numret!"];
-    //[self changeText:@"Gissa numret"];
 }
 
-//Creates random number
+//Generates random number
 - (void)randomNumber/*:(int)randomNr*/{
     secretNr = arc4random_uniform(100)+1;
     NSLog(@"randomNumber: guess is %i", secretNr);
-    //NSLog(@"inside method random number the secret nr is %i", randomNr);
-    //return randomNr;
 }
 
 //Refreshes number in text field
@@ -77,6 +63,12 @@ int guessButtonPressed;
 //Takes the number from the slides
 - (int) currentNumber {
     return self.numberSlider.value;
+}
+
+//Shows number of guesses
+- (void) refreshNoOfGuesses {
+    self.guessesShown.text = [NSString stringWithFormat:@"Antal gissningar: %i", guessButtonPressed];
+    NSLog(@"refreshNoOfGuesses: guessButtonPressed is %i", guessButtonPressed);
 }
 
 //When changing the slider, the shown number changes as well
@@ -98,28 +90,18 @@ int guessButtonPressed;
     } else {
         [self changeText:@"Korrekt!!"];
         NSLog(@"guessButton: guess är %i", guess);
-        //[self initialize];
     }
 }
 
+//Initializes the game again if pressing reset button
 - (IBAction)playAgainButton:(id)sender {
     [self initialize];
 }
 
-//Change text when guessing
+//Method for changing the text
 - (void)changeText:(NSString*)text {
     self.textShown.text = [NSString stringWithFormat:@"%@", text];
 }
-
-- (void) refreshNoOfGuesses {
-    self.guessesShown.text = [NSString stringWithFormat:@"Antal gissningar: %i", guessButtonPressed];
-    NSLog(@"refreshNoOfGuesses: guessButtonPressed is %i", guessButtonPressed);
-}
-
-//Shows hos many guesses you've made
-/*- (int) currentNrOfGuesses {
-    return
-}*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -133,13 +115,6 @@ int guessButtonPressed;
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
-    ViewControllerSettings *colorSetting = [[ViewControllerSettings alloc] init];
-    backgroundSavedColorGame = [segue destinationViewController];
-    backgroundSavedColorGame.view.backgroundColor = [colorSetting currentColor];
-    textSavedColorGame = [segue destinationViewController];
-    textSavedColorGame.view.tintColor = [colorSetting currentTextColor];
 }
-
 
 @end

@@ -15,5 +15,4 @@
 @property (nonatomic) float redTextValueMG;
 @property (nonatomic) float greenTextValueMG;
 @property (nonatomic) float blueTextValueMG;
-
 @end

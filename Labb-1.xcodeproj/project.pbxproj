@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		654D84202013A1E50072BDD7 /* ViewControllerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D841F2013A1E50072BDD7 /* ViewControllerMenu.m */; };
-		654D84232013C4EB0072BDD7 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D84222013C4EB0072BDD7 /* Color.m */; };
 		65B053C3200F917100E0AD7F /* ViewControllerSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B053C2200F917100E0AD7F /* ViewControllerSettings.m */; };
 		65B13A7A200E87BC00FF3F8E /* ViewControllerMiniGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B13A79200E87BC00FF3F8E /* ViewControllerMiniGame.m */; };
 		65C2CB6C2008FC2A007A3771 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2CB6B2008FC2A007A3771 /* AppDelegate.m */; };
@@ -23,8 +22,6 @@
 /* Begin PBXFileReference section */
 		654D841E2013A1E50072BDD7 /* ViewControllerMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerMenu.h; sourceTree = "<group>"; };
 		654D841F2013A1E50072BDD7 /* ViewControllerMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMenu.m; sourceTree = "<group>"; };
-		654D84212013C4EB0072BDD7 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
-		654D84222013C4EB0072BDD7 /* Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		65B053C1200F917100E0AD7F /* ViewControllerSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerSettings.h; sourceTree = "<group>"; };
 		65B053C2200F917100E0AD7F /* ViewControllerSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSettings.m; sourceTree = "<group>"; };
 		65B13A78200E87BC00FF3F8E /* ViewControllerMiniGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerMiniGame.h; sourceTree = "<group>"; };
@@ -88,8 +85,6 @@
 				654D841F2013A1E50072BDD7 /* ViewControllerMenu.m */,
 				65B13A78200E87BC00FF3F8E /* ViewControllerMiniGame.h */,
 				65B13A79200E87BC00FF3F8E /* ViewControllerMiniGame.m */,
-				654D84212013C4EB0072BDD7 /* Color.h */,
-				654D84222013C4EB0072BDD7 /* Color.m */,
 				65B053C1200F917100E0AD7F /* ViewControllerSettings.h */,
 				65B053C2200F917100E0AD7F /* ViewControllerSettings.m */,
 			);
@@ -171,7 +166,6 @@
 				65B13A7A200E87BC00FF3F8E /* ViewControllerMiniGame.m in Sources */,
 				65B053C3200F917100E0AD7F /* ViewControllerSettings.m in Sources */,
 				65C2CB8520090021007A3771 /* ViewControllerAboutFamily.m in Sources */,
-				654D84232013C4EB0072BDD7 /* Color.m in Sources */,
 				65C2CB6C2008FC2A007A3771 /* AppDelegate.m in Sources */,
 				65C2CB8B2009010B007A3771 /* ViewControllerAboutVictoria.m in Sources */,
 				654D84202013A1E50072BDD7 /* ViewControllerMenu.m in Sources */,

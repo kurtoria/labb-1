@@ -15,4 +15,5 @@
 @property (nonatomic) float redTextValueAF;
 @property (nonatomic) float greenTextValueAF;
 @property (nonatomic) float blueTextValueAF;
+@property (nonatomic) BOOL aboutFChangedColor;
 @end

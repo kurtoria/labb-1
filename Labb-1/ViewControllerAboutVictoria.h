@@ -15,5 +15,6 @@
 @property (nonatomic) float redTextValueAV;
 @property (nonatomic) float greenTextValueAv;
 @property (nonatomic) float blueTextValueAV;
+@property (nonatomic) BOOL aboutVChangedColor;
 
 @end

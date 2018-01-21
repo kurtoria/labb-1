@@ -33,8 +33,12 @@ int guessButtonPressed;
     [self initialize];
     NSLog(@"viewDidLoad: secretNr is %i", secretNr);
     [super viewDidLoad];
-    [ViewControllerSettings sendBackgroundColor: self.redBackgroundValueMG andGreen:self.greenBackgroundValueMG andBlue:self.blueBackgroundValueMG
-                                  andBackground:self.view];
+    if (self.miniGameChangedColor) {
+        [ViewControllerSettings sendBackgroundColor: self.redBackgroundValueMG andGreen:self.greenBackgroundValueMG andBlue:self.blueBackgroundValueMG andBackground:self.view];
+    } else {
+        self.view.backgroundColor = [UIColor whiteColor];
+        self.view.tintColor = [UIColor blackColor];
+    }
 }
 
 //Initializes the game, with generating random nr, refresh slider, refresh number of guesses and changing the text

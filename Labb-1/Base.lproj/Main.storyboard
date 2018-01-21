@@ -175,7 +175,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bb3-Dl-vNU">
-                                <rect key="frame" x="16" y="401" width="343" height="233.5"/>
+                                <rect key="frame" x="17" y="401" width="342.5" height="233.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Namn: Victoria
@@ -184,7 +184,7 @@ Tid bodd i Göteborg: Sen april 2014
 Tid spenderad mellan 1992 och Göteborg: Tjugo år i Norrköping och fyra år i Oslo.
 Spenderar fritiden med: Lira musik, försöka lära mig programmera och lira gura, äta massiva mängder mat och försöka klämma in en öl här och var.
 Skills: Trummor, äta en chipspåse på under tio minuter och Mario Kart.
-Mindre vass på: Gura, programmera, ej prokrastinera och </string>
+Mindre vass på: Gura, programmera, strukturera många saker och äta biff.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -205,12 +205,8 @@ Mindre vass på: Gura, programmera, ej prokrastinera och </string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U8H-5J-wOy">
-                                <rect key="frame" x="16" y="97" width="343" height="246"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iaz-UE-DOw">
-                                <rect key="frame" x="16" y="380" width="343" height="42"/>
+                                <rect key="frame" x="16" y="396" width="343" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Om Victoria"/>
@@ -218,13 +214,8 @@ Mindre vass på: Gura, programmera, ej prokrastinera och </string>
                                     <segue destination="cqR-m9-z5g" kind="show" identifier="aboutVictoria" id="V8q-aP-Qcs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGe-5i-V0f">
-                                <rect key="frame" x="198" y="616" width="161" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Om innan IT-Högskolan"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ju-8T-MHm">
-                                <rect key="frame" x="16" y="475" width="343" height="47"/>
+                                <rect key="frame" x="16" y="491" width="343" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Gissa numret"/>
@@ -233,7 +224,7 @@ Mindre vass på: Gura, programmera, ej prokrastinera och </string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lr-iQ-nP2">
-                                <rect key="frame" x="16" y="430" width="343" height="37"/>
+                                <rect key="frame" x="16" y="446" width="343" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Om familjemedlemmar"/>
@@ -242,7 +233,7 @@ Mindre vass på: Gura, programmera, ej prokrastinera och </string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQU-vK-F1I">
-                                <rect key="frame" x="16" y="530" width="343" height="42"/>
+                                <rect key="frame" x="16" y="546" width="343" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Inställningar"/>
@@ -250,6 +241,10 @@ Mindre vass på: Gura, programmera, ej prokrastinera och </string>
                                     <segue destination="XZ8-9O-nej" kind="show" identifier="settings" id="K5X-vD-wov"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="victoria2" translatesAutoresizingMaskIntoConstraints="NO" id="U8H-5J-wOy">
+                                <rect key="frame" x="33" y="125" width="309" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -277,7 +272,7 @@ Mindre vass på: Gura, programmera, ej prokrastinera och </string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Afa-IV-4oa">
-                                <rect key="frame" x="146" y="80" width="213" height="111"/>
+                                <rect key="frame" x="129" y="80" width="230" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Sambo: Claes Bra på: Skryta om sina danska gener, spela musik och hitta i GBG Mindre bra på: Fatta beslut, diska och hänga tavlor rakt. </string>
@@ -289,11 +284,11 @@ Mindre vass på: Gura, programmera, ej prokrastinera och </string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U0O-au-IVp">
-                                <rect key="frame" x="146" y="437" width="213" height="111"/>
+                                <rect key="frame" x="129" y="437" width="230" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Syster: Rebecca
-Bra på: Organisera sitt liv, vara en god storasyster och tipsa om bra böcker.
+Bra på: Strukturera, vara en god syster och tipsa om bra böcker.
 Mindre bra på: Låta mig planera, fungera utan mat och dricka sprit.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -303,7 +298,7 @@ Mindre bra på: Låta mig planera, fungera utan mat och dricka sprit.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qkc-Li-LJN">
-                                <rect key="frame" x="146" y="556" width="213" height="111"/>
+                                <rect key="frame" x="129" y="556" width="230" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Syster: Astrid
@@ -312,12 +307,12 @@ Mindre bra på: Tysta leken och uttnyttja sovmorgon.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="astrid" translatesAutoresizingMaskIntoConstraints="NO" id="4tJ-IP-vI3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="morgan2" translatesAutoresizingMaskIntoConstraints="NO" id="4tJ-IP-vI3">
                                 <rect key="frame" x="16" y="318" width="117" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SE3-3N-w8L">
-                                <rect key="frame" x="146" y="318" width="213" height="111"/>
+                                <rect key="frame" x="129" y="318" width="230" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Fader: Morgan
@@ -327,12 +322,12 @@ Mindre bra på: Passa tider, bli tjatad på och låta bli att spela wordfeud.</s
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zuI-3f-QdV">
-                                <rect key="frame" x="146" y="199" width="213" height="111"/>
+                                <rect key="frame" x="129" y="199" width="230" height="116.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Moder: Anna
 Bra på: Lära ut, köpa porslin och laga mat.
-Mindre bra på: Ringa vid lägliga tidpunkter, köra bil vid rusningstrafik och </string>
+Mindre bra på: Ringa vid lägliga tidpunkter, köra bil vid rusningstrafik och stressa.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -461,8 +456,10 @@ Mindre bra på: Ringa vid lägliga tidpunkter, köra bil vid rusningstrafik och 
         <image name="anna-1" width="1537" height="2049"/>
         <image name="astrid" width="3024" height="4032"/>
         <image name="claes" width="3024" height="4032"/>
+        <image name="morgan2" width="640" height="852"/>
         <image name="rebecca" width="750" height="1000"/>
         <image name="victoria" width="706" height="941"/>
+        <image name="victoria2" width="2047" height="2047"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lrm-PB-Lbb"/>

@@ -15,4 +15,5 @@
 @property (nonatomic) float redTextValueMG;
 @property (nonatomic) float greenTextValueMG;
 @property (nonatomic) float blueTextValueMG;
+@property (nonatomic) BOOL miniGameChangedColor;
 @end

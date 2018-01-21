@@ -32,7 +32,8 @@ static BOOL changedColor;
         //[ViewControllerSettings sendTextColor:self.redTextValueM andGreen:self.greenTextValueM andBlue:self.blueTextValueM andText:self.view.tintColor];
         NSLog(@"viewDidLoad: isChangedValue: %d", changedColor);
     } else {
-        self.view.backgroundColor = [UIColor whiteColor];
+        [self setDefaultColor];
+        //self.view.backgroundColor = [UIColor whiteColor];
         //self.view.tintColor = [UIColor blackColor];
     }
 }
@@ -40,6 +41,21 @@ static BOOL changedColor;
 + (BOOL)isChangedColor {
     changedColor = YES;
     return changedColor;
+}
+
+- (void) setDefaultColor {
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.tintColor = [UIColor blackColor];
+}
+
+/*
+- (void)forSegue:(UIViewController*)UIViewController redValue:(float)red greenValue:(float)green blueValue:(float)blue{
+    UIViewController.float = self.red;
+}
+ */
+
+- (void)settingsNotUsed:(UIViewController*)changedColor {
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,6 +73,7 @@ static BOOL changedColor;
         valuesViewControllerAboutV.redBackgroundValueAV = self.redBackgroundValueM;
         valuesViewControllerAboutV.greenBackgroundValueAV = self.greenBackgroundValueM;
         valuesViewControllerAboutV.blueBackgroundValueAV = self.blueBackgroundValueM;
+        valuesViewControllerAboutV.aboutVChangedColor = changedColor;
         /*
         valuesViewControllerAboutV.redTextValueAV = self.redTextValueM;
         valuesViewControllerAboutV.greenBackgroundValueAV = self.greenTextValueM;
@@ -67,6 +84,7 @@ static BOOL changedColor;
         valuesViewControllerMiniGame.redBackgroundValueMG = self.redBackgroundValueM;
         valuesViewControllerMiniGame.greenBackgroundValueMG = self.greenBackgroundValueM;
         valuesViewControllerMiniGame.blueBackgroundValueMG = self.blueBackgroundValueM;
+        valuesViewControllerMiniGame.miniGameChangedColor = changedColor;
         
         
     } else if ([[segue identifier] isEqualToString:@"settings"]) {
@@ -83,6 +101,7 @@ static BOOL changedColor;
         valuesViewControllerAboutFamily.redBackgroundValueAF = _redBackgroundValueM;
         valuesViewControllerAboutFamily.greenBackgroundValueAF = _greenBackgroundValueM;
         valuesViewControllerAboutFamily.blueBackgroundValueAF = _blueBackgroundValueM;
+        valuesViewControllerAboutFamily.aboutFChangedColor = changedColor;
     }
 }
 

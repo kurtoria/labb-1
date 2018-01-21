@@ -20,8 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [ViewControllerSettings sendBackgroundColor: self.redBackgroundValueAF andGreen:self.greenBackgroundValueAF andBlue:self.blueBackgroundValueAF
-                                  andBackground:self.view];
+    
+    if (self.aboutFChangedColor) {
+        [ViewControllerSettings sendBackgroundColor: self.redBackgroundValueAF andGreen:self.greenBackgroundValueAF andBlue:self.blueBackgroundValueAF andBackground:self.view];
+    } else {
+     self.view.backgroundColor = [UIColor whiteColor];
+     self.view.tintColor = [UIColor blackColor];
+    }
+     
+    
 }
 
 - (void)didReceiveMemoryWarning {

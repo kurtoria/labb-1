@@ -140,7 +140,7 @@ UIViewController *textSavedColor;
         valuesViewControllerMenu.greenBackgroundValueM = self.backgroundGreenAmount.value;
         valuesViewControllerMenu.blueBackgroundValueM = self.backgroundBlueAmount.value;
         
-        /*
+    /*
         valuesViewControllerMenu.redTextValueM = self.textRedAmount.value;
         valuesViewControllerMenu.greenTextValueM = self.textGreenAmount.value;
         valuesViewControllerMenu.blueTextValueM = self.textBlueAmount.value;
